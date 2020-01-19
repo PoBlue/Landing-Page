@@ -233,7 +233,7 @@ section.your-active-class .landing__container::after {
     font-size: medium;
 }
 
-.active h2{
+ul li .active{
     color: brown;
 }
 

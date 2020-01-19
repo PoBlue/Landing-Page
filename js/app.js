@@ -31,17 +31,18 @@ function elementInViewport2(el) {
 sections.forEach((ele) => {
     const sectionName = ele.getAttribute("data-nav");
     const navEle = document.createElement("li");
-    navEle.innerHTML = `<a href="#${ele.id}">${sectionName}</a>`;
+    navEle.innerHTML = `<a href="#${ele.id}" id="nav_${ele.id}">${sectionName}</a>`;
     nav.appendChild(navEle);
 }) ;
 
 // Add class 'active' to section when near top of viewport
 window.addEventListener("scroll", function() {
     sections.forEach((section) => {
+        const navEle = document.querySelector('#nav_' + section.id);
         if (elementInViewport2(section)) {
-            section.classList.add("active");
+            navEle.classList.add("active");
         } else {
-            section.classList.remove("active");
+            navEle.classList.remove("active");
         }
     });
 });
