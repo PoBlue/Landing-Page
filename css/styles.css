@@ -230,9 +230,13 @@ section.your-active-class .landing__container::after {
     text-decoration: none;
     color: blue;
     font-family: 'Oxygen', Sans-Serif;
-    font-size: large;
+    font-size: medium;
 }
 
 .active h2{
     color: brown;
+}
+
+#navbar__list {
+    display: flex;
 }
