@@ -223,7 +223,7 @@ section.your-active-class .landing__container::after {
 }
 
 .navbar__menu li {
-    margin: 16px;
+    margin: 8px;
 }
 
 .navbar__menu a{
